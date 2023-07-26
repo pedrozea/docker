@@ -1,0 +1,5 @@
+docker run -d --name mysql1 -e MYSQL_ROOT_PASSWORD=12345 -p 3306:3306 mysql
+
+# Ejecutar container creado a partir de la imagen generada con DockerFile (clima-app)
+
+docker run --rm --name climaValidator -e CITY_NAME=Bogota clima-app
